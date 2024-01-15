@@ -2,18 +2,13 @@ import 'package:court_scheduling/domain/entity/court/court.dart';
 import 'package:court_scheduling/domain/entity/reserve/reserve.dart';
 import 'package:welltested_annotation/welltested_annotation.dart';
 
-/// The status of the Product related API calls.
 enum ReserveStatus {
-  /// The first state when its instanced.
   initial,
 
-  /// The state is trying to make the API call.
   attempting,
 
-  /// The API return a 200 (ok).
   success,
 
-  /// The API return a unsuccessfully response code.
   failure,
 
   successWeather;

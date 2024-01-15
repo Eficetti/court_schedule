@@ -31,7 +31,6 @@ class LocalStorageImpl implements LocalStorage {
           .map((e) => Reserve.fromJson(jsonDecode(e) as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      print('Error loading reserves: $e');
       return [];
     }
   }

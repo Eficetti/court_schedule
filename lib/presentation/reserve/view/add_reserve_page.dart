@@ -190,8 +190,8 @@ class _AddReserveViewState extends State<AddReserveView> {
                         );
 
                         await context.read<ReserveCubit>().addReserve(reserve);
-                        // dateTimeController.clear();
-                        // userNameController.clear();
+                        dateTimeController.clear();
+                        userNameController.clear();
 
                         await Navigator.of(context).pushReplacementNamed('/');
                       }
